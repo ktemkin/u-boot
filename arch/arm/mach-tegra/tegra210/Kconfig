@@ -31,6 +31,11 @@ config TARGET_P2571
 	help
 	  P2571 is a P2530 married to a P1963 I/O board
 
+config TARGET_PIXELC
+	bool "Google Pixle C tablet"
+	help
+	  The Google Pixel C is a tablet containing a Tegra X1 CPU, a USB-C
+		connector supporting USB 2/3 and a sideband UART, and a touchscreen.
 endchoice
 
 config SYS_SOC
@@ -40,5 +45,7 @@ source "board/nvidia/e2220-1170/Kconfig"
 source "board/nvidia/p2371-0000/Kconfig"
 source "board/nvidia/p2371-2180/Kconfig"
 source "board/nvidia/p2571/Kconfig"
+
+source "board/nvidia/pixelc/Kconfig"
 
 endif
